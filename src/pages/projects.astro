@@ -1,0 +1,108 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Projects | Azrael Security">
+  <section class="py-16">
+    <h1 class="font-mono text-primary text-4xl md:text-5xl font-semibold leading-tight mb-4">
+      Projects
+    </h1>
+    <p class="text-text-muted text-lg max-w-2xl mb-10">
+      Infrastructure, tooling, and research. Each project is version controlled, actively maintained, and documented.
+    </p>
+
+    <div class="grid gap-6 md:grid-cols-2 mb-6">
+      <div class="border border-white/10 p-6 flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <span class="font-mono text-primary font-semibold text-lg">Veil</span>
+          <span class="font-mono text-xs px-2 py-0.5 rounded-full border border-accent text-accent">Active</span>
+        </div>
+        <p class="text-text-muted text-sm leading-relaxed">
+          Three-node WireGuard mesh. Hub-and-spoke topology via Cerberus. Built from scratch, version controlled throughout, operated continuously. Every decision is documented and reproducible.
+        </p>
+        <a
+          href="https://github.com/ForeverLX/veil"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="font-mono text-xs text-text-muted hover:text-accent transition-colors mt-auto"
+        >
+          github.com/ForeverLX/veil
+        </a>
+      </div>
+
+      <div class="border border-white/10 p-6 flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <span class="font-mono text-primary font-semibold text-lg">Cerberus</span>
+          <span class="font-mono text-xs px-2 py-0.5 rounded-full border border-accent text-accent">Active</span>
+        </div>
+        <p class="text-text-muted text-sm leading-relaxed">
+          Headless Arch Linux edge node and WireGuard hub. Runs Podman rootless Quadlets, no daemon, no root surface. Hosts DNS, search, TLS, Git, password management, monitoring, and threat detection for the rest of the mesh.
+        </p>
+        <a
+          href="https://github.com/ForeverLX/veil"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="font-mono text-xs text-text-muted hover:text-accent transition-colors mt-auto"
+        >
+          github.com/ForeverLX/veil
+        </a>
+      </div>
+    </div>
+
+    <div class="grid gap-6 md:grid-cols-3">
+      <div class="border border-white/10 p-6 flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <span class="font-mono text-primary font-semibold text-lg">NightForge</span>
+          <span class="font-mono text-xs px-2 py-0.5 rounded-full border border-accent text-accent">Active</span>
+        </div>
+        <p class="text-text-muted text-sm leading-relaxed">
+          The environment where all Azrael Security work originates. Arch Linux, Niri WM, Neovim, Ghostty. Each tool chosen deliberately, each configuration version controlled.
+        </p>
+        <a
+          href="https://github.com/ForeverLX/nightforge"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="font-mono text-xs text-text-muted hover:text-accent transition-colors mt-auto"
+        >
+          github.com/ForeverLX/nightforge
+        </a>
+      </div>
+
+      <div class="border border-white/10 p-6 flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <span class="font-mono text-primary font-semibold text-lg">Tairn</span>
+          <span class="font-mono text-xs px-2 py-0.5 rounded-full border border-accent text-accent">Active</span>
+        </div>
+        <p class="text-text-muted text-sm leading-relaxed">
+          NixOS 24.11 VM running Mythic C2 with Poseidon and Apollo agents. HTTP C2 profile, Docker-managed, firewall enforced at both NixOS and DOCKER-USER chain levels.
+        </p>
+        <a
+          href="https://github.com/ForeverLX/veil"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="font-mono text-xs text-text-muted hover:text-accent transition-colors mt-auto"
+        >
+          github.com/ForeverLX/veil
+        </a>
+      </div>
+
+      <div class="border border-white/10 p-6 flex flex-col gap-4">
+        <div class="flex items-center gap-3">
+          <span class="font-mono text-primary font-semibold text-lg">Container Boundary Research</span>
+          <span class="font-mono text-xs px-2 py-0.5 rounded-full border border-text-muted text-text-muted">In Progress</span>
+        </div>
+        <p class="text-text-muted text-sm leading-relaxed">
+          Research into container isolation failures and where kernel-enforced boundaries weaken under real conditions. Focus areas: syscall surface, namespace escape vectors, capability misconfigurations.
+        </p>
+        <a
+          href="https://github.com/ForeverLX/security-research"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="font-mono text-xs text-text-muted hover:text-accent transition-colors mt-auto"
+        >
+          github.com/ForeverLX/security-research
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
